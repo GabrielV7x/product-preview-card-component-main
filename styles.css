@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0.9355rem;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.container {
+  width: 90%;
+  margin: 1.8rem auto;
+  /* padding: 1rem 0; */
+  border-radius: 0.5rem;
+}
+
+.product {
+  font-family: "Montserrat", serif;
+  text-transform: uppercase;
+  color: hsl(228, 12%, 48%);
+}
+
+.product_name {
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.product_description {
+  font-family: "Montserrat", serif;
+  color: hsl(228, 12%, 48%);
+}
+
+.new_price {
+  color: hsl(158, 36%, 37%);
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.old_price {
+  color: hsl(228, 12%, 48%);
+  font-family: "Montserrat", serif;
+}
+
+/* mobile */
+@media screen and (max-width: 1023px) {
+  .flex_row {
+    display: flex;
+  }
+
+  .sub_container_1 {
+    width: 100%;
+    height: 14rem;
+    background-image: url("images/image-product-mobile.jpg");
+    background-size: cover; /* Ensures the image covers the whole div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents repetition */
+
+    border-top-left-radius: 0.5rem; /* Top-left corner */
+    border-top-right-radius: 0.5rem; /* Top-right corner */
+  }
+}
