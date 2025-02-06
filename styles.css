@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-size: 0.9355rem;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,12 +11,21 @@ body {
 
 .container {
   width: 90%;
+  height: 85vh;
   margin: 1.8rem auto;
   /* padding: 1rem 0; */
   border-radius: 0.5rem;
+  background-color: white;
+}
+
+.sub_container_2 {
+  background-color: white;
 }
 
 .product {
+  font-weight: 500;
+  letter-spacing: 0.4rem;
+  font-size: 0.8rem;
   font-family: "Montserrat", serif;
   text-transform: uppercase;
   color: hsl(228, 12%, 48%);
@@ -32,6 +42,10 @@ body {
   color: hsl(228, 12%, 48%);
 }
 
+.price {
+  align-items: center;
+}
+
 .new_price {
   color: hsl(158, 36%, 37%);
   font-family: "Fraunces", serif;
@@ -42,6 +56,28 @@ body {
 .old_price {
   color: hsl(228, 12%, 48%);
   font-family: "Montserrat", serif;
+  text-decoration: line-through;
+}
+
+.cta_container {
+  width: 50%;
+  margin: 0 auto;
+  justify-content: center;
+  background-color: hsl(158, 36%, 37%);
+}
+
+.cta_container .cart_icon {
+  width: 1rem;
+  height: 1rem;
+  background-image: url("images/icon-cart.svg");
+  background-size: cover; /* Ensures the image covers the whole div */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents repetition */
+}
+
+.cta_container .cta {
+  color: white;
+  font-family: "Montserrat", serif;
 }
 
 /* mobile */
@@ -51,6 +87,7 @@ body {
   }
 
   .sub_container_1 {
+    flex-grow: 1;
     width: 100%;
     height: 14rem;
     background-image: url("images/image-product-mobile.jpg");
@@ -60,5 +97,10 @@ body {
 
     border-top-left-radius: 0.5rem; /* Top-left corner */
     border-top-right-radius: 0.5rem; /* Top-right corner */
+  }
+
+  .sub_container_2 {
+    flex-grow: 2;
+    padding: 1rem;
   }
 }
